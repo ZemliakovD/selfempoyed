@@ -6,7 +6,7 @@
                     <h2 class="main-title">Работайте на себя</h2>
                     <p class="main-description">C сервисами для самозанятых БСБ Банка</p>
                     <button class="button main-button">Подключить</button>
-                    <button class="button mobile-button">Подключить</button>
+                    <button class="button mobile-button" id="b-connect">Подключить</button>
                 </div>
                 <div class="main-banner">
                     <img src="https://i.ibb.co/JQvtyy4/main-banner.png" alt="Самозанятость в РБ" class="banner-img">
@@ -174,13 +174,13 @@
 </div>
 
 <style>
-    *{
+    * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
     }
 
-    a{
+    a {
         text-decoration: none;
     }
 
@@ -189,12 +189,12 @@
         margin: 0 auto;
     }
 
-    .main{
+    .main {
         margin-bottom: 60px;
         color: #fff;
     }
 
-    .main-content{
+    .main-content {
         display: flex;
         justify-content: space-around;
         background: linear-gradient(180deg, #E31E24 0%, #B31318 100%);
@@ -202,32 +202,32 @@
         align-items: center;
     }
 
-    .main-info{
+    .main-info {
         width: 50%;
         padding-top: 50px;
         padding-bottom: 50px;
         padding-left: 50px;
     }
 
-    .main-title{
+    .main-title {
         font-weight: 900;
         font-size: 75px;
         line-height: 60px;
         margin-bottom: 25px;
     }
 
-    .main-description{
+    .main-description {
         margin-bottom: 25px;
         font-weight: 400;
         font-size: 26px;
         line-height: 26px;
     }
 
-    .mobile-button{
+    .mobile-button {
         display: none;
     }
 
-    .button{
+    .button {
         background: #FFFFFF;
         border-radius: 10px;
         font-weight: 600;
@@ -241,95 +241,95 @@
         transition: all .5s;
     }
 
-    .button:hover{
+    .button:hover {
         background: #B31318;
         color: #fff;
         border: 1px solid #fff;
     }
 
-    .banner-img{
+    .banner-img {
         width: 100%;
     }
 
-    .services{
+    .services {
         margin-bottom: 60px;
     }
 
-    .services-inner{
+    .services-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    .services-banner{
+    .services-banner {
         width: 50%;
         margin-right: 60px;
     }
 
-    .services-img{
+    .services-img {
         width: 100%;
     }
 
-    .services-content{
+    .services-content {
         width: 50%;
     }
 
-    .services-title{
+    .services-title {
         font-weight: 600;
         font-size: 32px;
         line-height: 38px;
         margin-bottom: 45px;
     }
 
-    .services-list{
+    .services-list {
         list-style-type: none;
     }
 
-    .services-list-item{
+    .services-list-item {
         list-style-image: url('https://i.ibb.co/93C2RTv/line.png');
         margin-bottom: 20px;
         font-size: 19px;
         line-height: 32px;
     }
 
-    .services-list-item:last-child{
+    .services-list-item:last-child {
         margin-bottom: 0;
     }
 
-    .e-bold{
+    .e-bold {
         font-weight: 600;
     }
 
-    .consult{
+    .consult {
         margin-bottom: 60px;
     }
 
-    .consult-inner{
+    .consult-inner {
         background: #F0F0F0;
         border-radius: 40px;
     }
 
-    .consult-content{
+    .consult-content {
         padding: 60px 120px;
     }
 
-    .consult-title{
+    .consult-title {
         font-weight: 500;
         font-size: 40px;
         line-height: 48px;
         margin-bottom: 45px;
     }
 
-    .consult-form{
+    .consult-form {
         display: flex;
         margin-bottom: 25px;
     }
 
-    .consult-label{
+    .consult-label {
         margin-bottom: 5px;
     }
 
-    .consult-input{
+    .consult-input {
         width: 70%;
         background: #FFFFFF;
         border-radius: 10px;
@@ -340,37 +340,37 @@
         outline: none;
     }
 
-    .consult-input::placeholder{
+    .consult-input::placeholder {
         font-weight: 700;
         font-size: 18px;
         line-height: 20px;
         color: #000;
     }
 
-    .consult-text{
+    .consult-text {
         font-weight: 400;
         font-size: 12px;
         line-height: 14px;
         color: #575F69;
     }
 
-    .consult-button{
+    .consult-button {
         padding: 10px 20px;
         background: #B31318;
         color: #fff;
     }
 
-    .consult-button:hover{
+    .consult-button:hover {
         background: #fff;
-        color:#B31318;
+        color: #B31318;
         border: 1px solid #B31318;
     }
 
-    .more{
+    .more {
         margin-bottom: 60px;
     }
 
-    .more-title{
+    .more-title {
         max-width: 520px;
         font-weight: 600;
         font-size: 32px;
@@ -378,11 +378,11 @@
         margin-bottom: 45px;
     }
 
-    .more-content-inner{
+    .more-content-inner {
         display: flex;
     }
 
-    .more-item{
+    .more-item {
         width: 25%;
         background: #F0F0F0;
         border-radius: 16px;
@@ -392,15 +392,15 @@
 
     .more-item:hover {
         box-shadow: 10px 10px 50px rgb(255 77 77 / 10%);
-    }   
+    }
 
-    .more-inner{
+    .more-inner {
         padding: 25px;
         display: inline-block;
         cursor: pointer;
     }
 
-    .more-item-title{
+    .more-item-title {
         font-weight: 400;
         font-size: 24px;
         line-height: 28px;
@@ -409,7 +409,7 @@
         min-height: 56px;
     }
 
-    .more-item-description{
+    .more-item-description {
         font-weight: 300;
         font-size: 16px;
         line-height: 18px;
@@ -417,47 +417,47 @@
         margin-bottom: 5px;
     }
 
-    .more-item-img{
+    .more-item-img {
         width: 100%;
     }
 
-    .call{
+    .call {
         margin-bottom: 60px;
     }
 
-    .call-title{
+    .call-title {
         font-weight: 900;
         font-size: 82px;
         line-height: 80px;
         margin-bottom: 60px;
     }
 
-    .r-color{
+    .r-color {
         color: #E31E24;
     }
 
-    .call-content-item{
+    .call-content-item {
         display: flex;
         align-items: center;
         margin-bottom: 15px;
     }
 
-    .call-content-icon{
+    .call-content-icon {
         margin-right: 20px;
         width: 4%;
     }
 
-    .call-content-text{
+    .call-content-text {
         font-weight: 300;
         font-size: 24px;
         line-height: 42px;
     }
 
-    .faq{
+    .faq {
         margin-bottom: 60px;
     }
 
-    .faq-title{
+    .faq-title {
         font-weight: 600;
         font-size: 32px;
         line-height: 38px;
@@ -511,6 +511,15 @@
 </style>
 
 <script>
+
+    $("#b-coonect").click(function () { // ID откуда кливаем
+        $('html, body').animate({
+            scrollTop: $(".more").offset().top // класс объекта к которому приезжаем
+        }, 1000); // Скорость прокрутки
+    });
+
+
+
     var acc = document.getElementsByClassName("accordion");
     var i;
 
@@ -525,4 +534,6 @@
             }
         });
     }
+
+
 </script>
